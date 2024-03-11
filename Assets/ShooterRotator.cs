@@ -13,7 +13,7 @@ public class ShooterRotator : MonoBehaviour
    private RotateState state = RotateState.Idle;
    public float verticalRotateSpeed = 360f;
    public float horizontalRotateSpeed = 360f;
-
+   public BallShooter ballShooter;
    void Update()
    {
         switch(state){
@@ -36,12 +36,19 @@ public class ShooterRotator : MonoBehaviour
                     transform.Rotate(new Vector3(-verticalRotateSpeed * Time.deltaTime, 0, 0));
                 } else if (Input.GetButtonUp("Fire1")){
                     state = RotateState.Ready;
+                    ballShooter.enabled = true;
                 }
             break;
 
             case RotateState.Ready:
                 
             break;
+        }
+   }
+        private void OnEnable(){
+            transform.rotation = Quaternion.identity;
+            state = RotateState.Idle;
+            ballShooter.enabled = false;
         }
         // if(state == RotateState.Idle){
         //     if(Input.GetButtonDown("Fire1")){
@@ -63,6 +70,6 @@ public class ShooterRotator : MonoBehaviour
         //     }
         // } 
         // if문과 switch문
-    } 
+    
 }
 
