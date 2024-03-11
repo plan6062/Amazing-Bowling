@@ -228,6 +228,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8065996434315984562, guid: 750bb6e27a6e10b4fbf164b3b2f71a9c, type: 3}
+      propertyPath: m_Volume
+      value: 0.512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065996434315984562, guid: 750bb6e27a6e10b4fbf164b3b2f71a9c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -9051341742061101655, guid: 9b82288cf8417a74c8df32a4ceabe900, type: 2}
     - target: {fileID: 9039319002990121272, guid: 750bb6e27a6e10b4fbf164b3b2f71a9c, type: 3}
       propertyPath: playOnAwake
       value: 0
