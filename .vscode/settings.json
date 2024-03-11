@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Amazing Bowling.sln"
+    "dotnet.defaultSolution": "Amazing-Bowling.sln"
 }
